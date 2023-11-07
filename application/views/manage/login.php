@@ -9,7 +9,7 @@
 
   <title>YAYASAN HIFDZULWAFA AL - MADANI | Login</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="icon" type="image/png" href="<?php echo media_url('img/logoyayasan.png') ?>">
+  <link rel="icon" type="image/png" href="<?php echo media_url('img/logoyayasanbc.png') ?>">
   <link href="<?php echo media_url() ?>css/bootstrap.min.css" rel="stylesheet" />
   <link href="<?php echo media_url() ?>css/font-awesome.min.css" rel="stylesheet" />
   <link href="<?php echo media_url() ?>css/login.css" rel="stylesheet" />
