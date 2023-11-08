@@ -84,7 +84,7 @@ class Student_set extends CI_Controller
       $params['student_nisn'] = $this->input->post('student_nisn');
       $params['student_gender'] = $this->input->post('student_gender');
       $params['student_phone'] = $this->input->post('student_phone');
-      $params['student_hobby'] = $this->input->post('student_hobby');
+      // $params['student_hobby'] = $this->input->post('student_hobby');
       $params['class_class_id'] = $this->input->post('class_class_id');
       $params['majors_majors_id'] = $this->input->post('majors_majors_id');
       $params['student_last_update'] = date('Y-m-d H:i:s');
@@ -297,7 +297,7 @@ class Student_set extends CI_Controller
           'student_gender' => trim($exp[3]),
           'student_born_place' => trim($exp[4]),
           'student_born_date' => trim($exp[5]),
-          'student_hobby' => trim($exp[6]),
+          // 'student_hobby' => trim($exp[6]),
           'student_phone' => trim($exp[7]),
           'student_address' => trim($exp[8]),
           'student_name_of_mother' => trim($exp[9]),

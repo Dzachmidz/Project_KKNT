@@ -11,7 +11,7 @@ if (isset($student)) {
 	$inputDateValue = $student['student_born_date'];
 	$inputPhoneValue = $student['student_phone'];
 	$inputParPhoneValue = $student['student_parent_phone'];
-	$inputHobbyValue = $student['student_hobby'];
+	// $inputHobbyValue = $student['student_hobby'];
 	$inputAddressValue = $student['student_address'];
 	$inputGenderValue = $student['student_gender'];
 	$inputMotherValue = $student['student_name_of_mother'];
@@ -27,7 +27,7 @@ if (isset($student)) {
 	$inputDateValue = set_value('student_born_date');
 	$inputPhoneValue = set_value('student_phone');
 	$inputParPhoneValue = set_value('student_parent_phone');
-	$inputHobbyValue = set_value('student_hobby');
+	// $inputHobbyValue = set_value('student_hobby');
 	$inputAddressValue = set_value('student_address');
 	$inputGenderValue = set_value('student_gender');
 	$inputMotherValue = set_value('student_name_of_mother');
@@ -99,11 +99,6 @@ if (isset($student)) {
 											<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 											<input class="form-control" type="text" name="student_born_date" readonly="readonly" placeholder="Tanggal" value="<?php echo $inputDateValue; ?>">
 										</div>
-									</div>
-
-									<div class="form-group">
-										<label>Hobi</label>
-										<input name="student_hobby" type="text" class="form-control" value="<?php echo $inputHobbyValue ?>" placeholder="Hobi">
 									</div>
 
 									<div class="form-group">
