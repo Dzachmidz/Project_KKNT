@@ -20,7 +20,7 @@ if (isset($period)) {
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="<?php echo site_url('manage') ?>"><i class="fa fa-th"></i> Home</a></li>
-			<li><a href="<?php echo site_url('manage/period') ?>">Tahun Pelajaran</a></li>
+			<li><a href="<?php echo site_url('manage/period') ?>">Tahun Ajaran</a></li>
 			<li class="active"><?php echo isset($title) ? '' . $title : null; ?></li>
 		</ol>
 	</section>
@@ -41,7 +41,7 @@ if (isset($period)) {
 						<?php } ?>
 
 						<div class="form-group">
-							<label>Tahun Pelajaran *</label>
+							<label>Tahun Ajaran *</label>
 							<div class="row">
 								<div class="col-sm-6 col-md-6">
 									<input type="text" name="period_start" readonly="" class="form-control years" onchange="getYear(this.value)" placeholder="Tahun Awal">

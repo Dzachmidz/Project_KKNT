@@ -32,7 +32,7 @@
 									<table class="table table-hover">
 										<tbody>
 											<tr>
-												<td>Nomor Induk Madrasah (NIM)</td>
+												<td>NIS</td>
 												<td>:</td>
 												<td><?php echo $student['student_nis'] ?></td>
 											</tr>
@@ -93,7 +93,7 @@
 											</tr>
 											<?php if (majors() == 'senior') { ?>
 												<tr>
-													<td>Jurusan</td>
+													<td>Jenjang</td>
 													<td>:</td>
 													<td><?php echo $student['majors_name'] ?></td>
 												</tr>

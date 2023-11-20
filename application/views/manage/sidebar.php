@@ -97,7 +97,7 @@
 
               <?php if (majors() == 'senior') { ?>
                 <li class="<?php echo ($this->uri->segment(2) == 'majors') ? 'active' : '' ?> ">
-                  <a href="<?php echo site_url('manage/majors') ?>"><i class="fa  <?php echo ($this->uri->segment(2) == 'majors') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i> JURUSAN</a>
+                  <a href="<?php echo site_url('manage/majors') ?>"><i class="fa  <?php echo ($this->uri->segment(2) == 'majors') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i> JENJANG</a>
                 </li>
 
                 <li class="<?php echo ($this->uri->segment(2) == 'student' and $this->uri->segment(3) != 'pass' and $this->uri->segment(3) != 'upgrade') ? 'active' : '' ?> ">

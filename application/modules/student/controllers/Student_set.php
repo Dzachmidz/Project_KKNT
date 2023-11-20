@@ -63,9 +63,9 @@ class Student_set extends CI_Controller
 
     if (!$this->input->post('student_id')) {
       $this->form_validation->set_rules('student_nis', 'NIM', 'trim|required|xss_clean|is_unique[student.student_nis]');
-      $this->form_validation->set_rules('student_password', 'Password', 'trim|required|xss_clean|min_length[6]');
-      $this->form_validation->set_rules('passconf', 'Konfirmasi password', 'trim|required|xss_clean|min_length[6]|matches[student_password]');
-      $this->form_validation->set_message('passconf', 'Password dan konfirmasi password tidak cocok');
+      // $this->form_validation->set_rules('student_password', 'Password', 'trim||xss_clean|min_length[6]');
+      // $this->form_validation->set_rules('passconf', 'Konfirmasi password', 'trim||xss_clean|min_length[6]|matches[student_password]');
+      // $this->form_validation->set_message('passconf', 'Password dan konfirmasi password tidak cocok');
     }
     $this->form_validation->set_rules('class_class_id', 'Kelas', 'trim|required|xss_clean');
     $this->form_validation->set_rules('student_full_name', 'Nama lengkap', 'trim|required|xss_clean');
@@ -84,7 +84,7 @@ class Student_set extends CI_Controller
       $params['student_nisn'] = $this->input->post('student_nisn');
       $params['student_gender'] = $this->input->post('student_gender');
       $params['student_phone'] = $this->input->post('student_phone');
-      // $params['student_hobby'] = $this->input->post('student_hobby');
+      $params['student_hobby'] = $this->input->post('student_hobby');
       $params['class_class_id'] = $this->input->post('class_class_id');
       $params['majors_majors_id'] = $this->input->post('majors_majors_id');
       $params['student_last_update'] = date('Y-m-d H:i:s');

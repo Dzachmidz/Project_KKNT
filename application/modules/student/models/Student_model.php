@@ -86,7 +86,7 @@ class Student_model extends CI_Model
         } else {
             $this->db->order_by('student_full_name', 'asc');
         }
-        // $this->db->select('student.student_id, student_nis, student_nisn, student_password, student_gender, student_phone, student_hobby, student_address, student_parent_phone, student_full_name, student_born_place, student_born_date, student_img, student_status, student_name_of_mother, student_name_of_father, student_input_date, student_last_update');
+        $this->db->select('student.student_id, student_nis, student_nisn, student_password, student_gender, student_phone, student_hobby, student_address, student_parent_phone, student_full_name, student_born_place, student_born_date, student_img, student_status, student_name_of_mother, student_name_of_father, student_input_date, student_last_update');
         $this->db->select('class_class_id, class.class_name');
         $this->db->select('majors_majors_id, majors.majors_name, majors_short_name');
         $this->db->join('class', 'class.class_id = student.class_class_id', 'left');
