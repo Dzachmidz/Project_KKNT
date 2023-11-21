@@ -21,7 +21,7 @@ class Report_set extends CI_Controller {
 		$data['q'] = $q;
 
 		$params = array();
-
+	
     // Date start
 		if (isset($q['ds']) && !empty($q['ds']) && $q['ds'] != '') {
 			$params['date_start'] = $q['ds'];
