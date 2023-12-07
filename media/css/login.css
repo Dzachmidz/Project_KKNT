@@ -96,8 +96,8 @@ form .row input::placeholder {
   height: 100%;
   color: #fff;
   font-size: 18px;
-  background: #16a085;
-  border: 1px solid #16a085;
+  background: #5a5a5a;
+  border: 1px solid #707070;
   border-radius: 5px 0 0 5px;
   display: flex;
   align-items: center;
@@ -166,8 +166,8 @@ form .signup-link a:hover {
   font-size: 16px;
   font-weight: 500;
   padding: 5px 20px;
-  background: #16a085;
-  border: 1px solid #16a085;
+  background: #ffffff;
+  border: 1px solid rgb(93, 93, 93);
   cursor: pointer;
 }
 .btn-login:hover {
