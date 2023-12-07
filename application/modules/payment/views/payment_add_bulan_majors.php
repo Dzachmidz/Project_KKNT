@@ -66,10 +66,10 @@ if (isset($bulan)) {
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-4 control-label">Program Jurusan</label>
+								<label for="" class="col-sm-4 control-label">Program JENJANG</label>
 								<div class="col-sm-8">
 									<select name="majors_id" class="form-control" required="">
-										<option value="">---Pilih Jurusan---</option>
+										<option value="">---Pilih JENJANG---</option>
 										<?php foreach ($majors as $row) : ?>
 											<option value="<?php echo $row['majors_id']; ?>"><?php echo $row['majors_name']; ?></option>
 										<?php endforeach; ?>

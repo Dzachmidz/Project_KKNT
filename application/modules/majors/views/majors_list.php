@@ -20,7 +20,7 @@
 						<div class="box-tools">
 							<?php echo form_open(current_url(), array('class' => 'form-horizontal', 'method' => 'get')) ?>
 							<div class="input-group input-group-sm" style="width: 250px;">
-								<input type="text" id="field" autofocus name="n" <?php echo (isset($f['n'])) ? 'placeholder="' . $f['n'] . '"' : 'placeholder="Nama Jurusan"' ?> class="form-control" required>
+								<input type="text" id="field" autofocus name="n" <?php echo (isset($f['n'])) ? 'placeholder="' . $f['n'] . '"' : 'placeholder="Cari Nama Jenjang"' ?> class="form-control" required>
 								<div class="input-group-btn">
 									<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 								</div>
@@ -33,9 +33,9 @@
 						<table class="table table-hover table-striped table-bordered">
 							<tr>
 								<th>No</th>
-								<th>Nama Jurusan</th>
+								<th>Nama Jenjang</th>
 								<th>Singkatan</th>
-								<th>ID Jurusan</th>
+								<th>ID Jenjang</th>
 								<th>Aksi</th>
 							</tr>
 							<tbody>
@@ -108,14 +108,14 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Tambah Jurusan</h4>
+				<h4 class="modal-title">Tambah Jenjang</h4>
 			</div>
 			<?php echo form_open('manage/majors/add_glob', array('method' => 'post')); ?>
 			<div class="modal-body">
 				<div id="p_scents_majors">
 					<div class="row">
 						<div class="col-md-6">
-							<label>Nama Jurusan</label>
+							<label>Nama Jenjang</label>
 							<input type="text" required="" name="majors_name[]" class="form-control" placeholder="Contoh: IPA">
 						</div>
 						<div class="col-md-6">
@@ -143,7 +143,7 @@
 		var i = $('#p_scents_majors .row').size() + 1;
 
 		$("#addScnt_majors").click(function() {
-			$('<div class="row"><br><div class="col-md-6"><label>Nama Jurusan</label><input type="text" required name="majors_name[]" class="form-control" placeholder="Contoh: IPA"><br><a href="#" class="btn btn-xs btn-danger remScnt_majors"><i class="fa fa-close"></i> <b>Hapus Baris</b></a></div><div class="col-md-6"><label>Singkatan</label><input type="text" required name="majors_short_name[]" class="form-control" placeholder="Contoh: IPA"></div></div>').appendTo(scntDiv);
+			$('<div class="row"><br><div class="col-md-6"><label>Nama Jenjang</label><input type="text" required name="majors_name[]" class="form-control" placeholder="Contoh: IPA"><br><a href="#" class="btn btn-xs btn-danger remScnt_majors"><i class="fa fa-close"></i> <b>Hapus Baris</b></a></div><div class="col-md-6"><label>Singkatan</label><input type="text" required name="majors_short_name[]" class="form-control" placeholder="Contoh: IPA"></div></div>').appendTo(scntDiv);
 			i++;
 			return false;
 		});

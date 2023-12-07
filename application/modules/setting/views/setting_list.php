@@ -25,11 +25,11 @@
                 </select>
               </div>
               <div class="form-group">
-                <label class="control-label">Nama Sekolah</label>
+                <label class="control-label">Nama Yayasan</label>
                 <input type="text" name="setting_school" value="<?php echo $setting_school['setting_value'] ?>" class="form-control" required>
               </div>
               <div class="form-group">
-                <label class="control-label">Alamat Sekolah</label>
+                <label class="control-label">Alamat Yayasan</label>
                 <input name="setting_address" type="text" value="<?php echo $setting_address['setting_value'] ?>" class="form-control" required>
               </div>
             </div>

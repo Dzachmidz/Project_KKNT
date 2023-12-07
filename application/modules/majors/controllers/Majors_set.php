@@ -48,7 +48,7 @@ class Majors_set extends CI_Controller
     $config['total_rows'] = count($this->Student_model->get_class($paramsPage));
     $this->pagination->initialize($config);
 
-    $data['title'] = 'Jurusan';
+    $data['title'] = 'JENJANG';
     $data['main'] = 'majors/majors_list';
     $this->load->view('manage/layout', $data);
   }
@@ -66,7 +66,7 @@ class Majors_set extends CI_Controller
         $this->Student_model->add_majors($params);
       }
     }
-    $this->session->set_flashdata('success', ' Tambah Jurusan Berhasil');
+    $this->session->set_flashdata('success', ' Tambah JENJANG Berhasil');
     redirect('manage/majors');
   }
 
@@ -74,8 +74,8 @@ class Majors_set extends CI_Controller
   public function add($id = NULL)
   {
     $this->load->library('form_validation');
-    $this->form_validation->set_rules('majors_name', 'Nama Jurusan', 'trim|required|xss_clean');
-    $this->form_validation->set_rules('majors_short_name', 'Singkatan Jurusan', 'trim|required|xss_clean');
+    $this->form_validation->set_rules('majors_name', 'Nama JENJANG', 'trim|required|xss_clean');
+    $this->form_validation->set_rules('majors_short_name', 'Singkatan JENJANG', 'trim|required|xss_clean');
     $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><button ket="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>', '</div>');
     $data['operation'] = is_null($id) ? 'Tambah' : 'Sunting';
 
@@ -109,7 +109,7 @@ class Majors_set extends CI_Controller
           $data['majors'] = $object;
         }
       }
-      $data['title'] = $data['operation'] . ' Jurusan';
+      $data['title'] = $data['operation'] . ' JENJANG';
       $data['main'] = 'majors/majors_add';
       $this->load->view('manage/layout', $data);
     }
@@ -127,7 +127,7 @@ class Majors_set extends CI_Controller
       $siswa = $this->Student_model->get(array('majors_id' => $id));
 
       if (count($siswa) > 0) {
-        $this->session->set_flashdata('failed', 'Data Jurusan tidak dapat dihapus');
+        $this->session->set_flashdata('failed', 'Data JENJANG tidak dapat dihapus');
         redirect('manage/majors');
       }
 
@@ -143,7 +143,7 @@ class Majors_set extends CI_Controller
           'log_info' => 'ID:' . $id . ';Title:' . $this->input->post('delName')
         )
       );
-      $this->session->set_flashdata('success', 'Hapus Jurusan berhasil');
+      $this->session->set_flashdata('success', 'Hapus JENJANG berhasil');
       redirect('manage/majors');
     } elseif (!$_POST) {
       $this->session->set_flashdata('delete', 'Delete');

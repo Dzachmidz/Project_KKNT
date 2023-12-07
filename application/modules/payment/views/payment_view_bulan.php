@@ -34,10 +34,10 @@
 								</select>
 							</div>
 							<?php if (majors() == 'senior') { ?>
-								<label for="" class="col-sm-2 control-label">Program Jurusan</label>
+								<label for="" class="col-sm-2 control-label">Program JENJANG</label>
 								<div class="col-sm-2">
 									<select class="form-control" name="k">
-										<option value="">-- Semua Jurusan --</option>
+										<option value="">-- Semua JENJANG --</option>
 										<?php foreach ($majors as $row) : ?>
 											<option <?php echo (isset($q['k']) and $q['k'] == $row['majors_id']) ? 'selected' : '' ?> value="<?php echo $row['majors_id'] ?>"><?php echo $row['majors_name'] ?></option>
 										<?php endforeach; ?>
@@ -50,11 +50,11 @@
 						</div>
 						</form>
 						<hr>
-						<label for="" class="col-sm-2">Setting Tarif</label>
+						<label for="" class="col-sm-2">Pengaturan Tarif</label>
 						<div class="col-sm-10">
-							<a class="btn btn-primary btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Kelas</a>
+							<a class="btn btn-primary btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Tingkatan</a>
 							<?php if (majors() == 'senior') { ?>
-								<a class="btn btn-warning btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan_majors/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Jurusan</a>
+								<a class="btn btn-warning btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan_majors/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Kelas</a>
 							<?php } ?>
 							<a class="btn btn-info btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan_student/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Siswa</a>
 

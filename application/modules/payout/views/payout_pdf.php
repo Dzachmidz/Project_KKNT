@@ -79,7 +79,7 @@
 	<table style="padding-top: -5px; padding-bottom: 5px">
 		<tbody>
 			<tr>
-				<td style="width: 100px;">NIM</td>
+				<td style="width: 100px;">NIS</td>
 				<td style="width: 5px;">:</td>
 				<td style="width: 150px;"><?php echo $printpay['student_nis'] ?></td>
 				<td style="width: 130px;">Tanggal Bayar</td>
@@ -98,7 +98,7 @@
 				<td style="width: 100px;">Kelas</td>
 				<td style="width: 5px;">:</td>
 				<td style="width: 150px;"><?php echo $printpay['class_name'] ?></td>
-				<td style="width: 130px;">Tahun Pelajaran</td>
+				<td style="width: 130px;">Tahun Ajaran</td>
 				<td style="width: 5px;">:</td>
 				<td style="width: 131px;"><?php echo $printpay['period_year'] ?></td>
 			</tr>

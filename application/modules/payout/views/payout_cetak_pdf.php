@@ -108,7 +108,7 @@
 	<table style="padding-top: -5px; padding-bottom: 5px">
 		<tbody>
 			<tr>
-				<td style="width: 100px;">NIM</td>
+				<td style="width: 100px;">NIS</td>
 				<td style="width: 5px;">:</td>
 				<?php foreach ($siswa as $row) : ?>
 					<td style="width: 150px;"><?php echo $row['student_nis'] ?></td>
@@ -123,7 +123,7 @@
 				<?php foreach ($siswa as $row) : ?>
 					<td style="width: 150px;"><?php echo $row['student_full_name'] ?></td>
 				<?php endforeach ?>
-				<td style="width: 130px;">Tahun Pelajaran</td>
+				<td style="width: 130px;">Tahun Ajaran</td>
 				<td style="width: 5px;">:</td>
 				<td style="width: 131px;"><?php foreach ($period as $row) : ?> <?php echo ($f['n'] == $row['period_id']) ? $row['period_start'] . '/' . $row['period_end'] : '' ?><?php endforeach; ?></td>
 			</tr>
