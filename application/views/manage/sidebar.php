@@ -125,7 +125,7 @@
                       <li class="<?php echo ($this->uri->segment(2) == 'majors') ? 'active' : '' ?> ">
                           <a href="<?php echo site_url('manage/majors') ?>"><i
                                   class="fa  <?php echo ($this->uri->segment(2) == 'majors') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i>
-                              JURUSAN</a>
+                              JENJANG</a>
                       </li>
 
                       <li

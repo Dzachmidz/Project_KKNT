@@ -102,7 +102,7 @@ if (isset($student)) {
 									</div>
 
 									<div class="form-group">
-										<label>No. Handphone <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
+										<label>No. Handphone</label>
 										<input name="student_phone" type="text" class="form-control" value="<?php echo $inputPhoneValue ?>" placeholder="No Handphone">
 									</div>
 									<div class="form-group">
@@ -117,8 +117,8 @@ if (isset($student)) {
 										<input name="student_nis" type="text" class="form-control" value="<?php echo $inputNisValue ?>" placeholder="NIS">
 									</div>
 									<div class="form-group">
-										<label>NISN</label>
-										<input name="student_nisn" type="text" class="form-control" value="<?php echo $inputNisNValue ?>" placeholder="NISN">
+										<label>NIK</label>
+										<input name="student_nisn" type="text" class="form-control" value="<?php echo $inputNisNValue ?>" placeholder="NIK">
 									</div>
 									<?php if ($setting_level['setting_value'] == 'senior') { ?>
 										<div class="form-group">

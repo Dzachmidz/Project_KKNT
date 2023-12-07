@@ -41,13 +41,13 @@ if (isset($majors)) {
 
 
 						<div class="form-group">
-							<label>Nama Jurusan <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
-							<input name="majors_name" type="text" class="form-control" value="<?php echo $inputMajorsValue ?>" placeholder="Isi Nama Jurusan">
+							<label>Nama JENJANG <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
+							<input name="majors_name" type="text" class="form-control" value="<?php echo $inputMajorsValue ?>" placeholder="Isi Nama JENJANG">
 						</div>
 
 						<div class="form-group">
-							<label>Singkatan Jurusan <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
-							<input name="majors_short_name" type="text" class="form-control" value="<?php echo $inputShortValue ?>" placeholder="Isi Singkatan Jurusan">
+							<label>Singkatan JENJANG <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
+							<input name="majors_short_name" type="text" class="form-control" value="<?php echo $inputShortValue ?>" placeholder="Isi Singkatan JENJANG">
 						</div>
 
 

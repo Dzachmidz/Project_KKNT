@@ -34,10 +34,10 @@
 								</select>
 							</div>
 							<?php if (majors() == 'senior') { ?>
-								<label for="" class="col-sm-2 control-label">Jurusan</label>
+								<label for="" class="col-sm-2 control-label">JENJANG</label>
 								<div class="col-sm-2">
 									<select class="form-control" name="k">
-										<option value="">-- Semua Jurusan --</option>
+										<option value="">-- Semua JENJANG --</option>
 										<?php foreach ($majors as $row) : ?>
 											<option <?php echo (isset($q['k']) and $q['k'] == $row['majors_id']) ? 'selected' : '' ?> value="<?php echo $row['majors_id'] ?>"><?php echo $row['majors_name'] ?></option>
 										<?php endforeach; ?>

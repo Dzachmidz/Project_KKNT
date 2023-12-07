@@ -128,7 +128,7 @@ if (isset($student)) {
 									</div>
 									<?php if (majors() == 'senior') { ?>
 										<div class="form-group">
-											<label>Jurusan <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
+											<label>JENJANG <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
 											<input readonly="" type="text" class="form-control" value="<?php echo $student['majors_name'] ?>">
 										</div>
 									<?php } ?>

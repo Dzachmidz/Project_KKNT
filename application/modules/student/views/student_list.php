@@ -45,7 +45,7 @@
 								<th><input type="checkbox" id="selectall" value="checkbox" name="checkbox"></th>
 								<th>No</th>
 								<th>NIS</th>
-								<th>NISN</th>
+								<th>NIK</th>
 								<th>Nama</th>
 								<th>Kelas</th>
 								<th>Jenjang</th>

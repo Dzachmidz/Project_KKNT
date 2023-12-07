@@ -37,7 +37,7 @@
 												<td><?php echo $student['student_nis'] ?></td>
 											</tr>
 											<tr>
-												<td>NISN</td>
+												<td>NIK</td>
 												<td>:</td>
 												<td><?php echo $student['student_nisn'] ?></td>
 											</tr>

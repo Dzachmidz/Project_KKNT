@@ -100,7 +100,7 @@
 										</tr>
 										<?php if (majors() == 'senior') { ?>
 											<tr>
-												<td>Jurusan</td>
+												<td>JENJANG</td>
 												<td>:</td>
 												<?php foreach ($siswa as $row) : ?>
 													<?php echo (isset($f['n']) and $f['r'] == $row['student_nis']) ?
