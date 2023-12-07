@@ -42,7 +42,7 @@
 								<tr>
 									<th><input type="checkbox" id="selectall" value="checkbox" name="checkbox"></th>
 									<th>No</th>
-									<th>NIM</th>
+									<th>NIS</th>
 									<th>Nama</th>
 									<th>Kelas</th>
 								</tr>
@@ -93,7 +93,7 @@
 							<?php endforeach; ?>
 						</select>
 						<br>
-						<button class="btn btn-danger btn-block" type="submit"><span class="glyphicon glyphicon glyphicon-chevron-right"></span> <b>Proses Naik Kelas</b></button>
+						<button class="btn btn-danger btn-block" type="submit"><span class="glyphicon glyphicon glyphicon-chevron-right"></span> <b>Proses Kenaikan Kelas</b></button>
 						</form>
 					</div>
 				</div>

@@ -63,7 +63,7 @@
 							</div>
 							<?php if (majors() == 'senior') { ?>
 								<div class="form-group">
-									<label for="" class="col-sm-4 control-label">Program Jurusan</label>
+									<label for="" class="col-sm-4 control-label">Program Jenjang</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control" readonly="" value="<?php echo $student['majors_name'] ?>">
 									</div>

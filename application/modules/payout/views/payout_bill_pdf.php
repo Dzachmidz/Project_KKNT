@@ -65,11 +65,11 @@
 
 <body>
   <p class="title">RINCIAN PEMBAYARAN ADMINISTRASI</p>
-  <p class="tp"> TAHUN PELAJARAN <?php foreach ($period as $row) : ?> <?php echo ($f['n'] == $row['period_id']) ? $row['period_start'] . '/' . $row['period_end'] : '' ?><?php endforeach; ?></p>
+  <p class="tp"> TAHUN AJARAN <?php foreach ($period as $row) : ?> <?php echo ($f['n'] == $row['period_id']) ? $row['period_start'] . '/' . $row['period_end'] : '' ?><?php endforeach; ?></p>
 
   <table style="font-size: 10pt;" width="100%" border="0">
     <tr>
-      <td width="100">NIM</td>
+      <td width="100">NIS</td>
       <td width="5">:</td>
       <?php foreach ($siswa as $row) : ?>
         <td width=""><?php echo $row['student_nis'] ?></td>
@@ -91,7 +91,7 @@
     </tr>
     <?php if (majors() == 'senior') { ?>
       <tr>
-        <td>Jurusan</td>
+        <td>Jenjang</td>
         <td>:</td>
         <?php foreach ($siswa as $row) : ?>
           <td><?php echo $row['majors_name'] ?></td>

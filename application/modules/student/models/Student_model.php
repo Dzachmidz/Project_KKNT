@@ -206,9 +206,9 @@ class Student_model extends CI_Model
             $this->db->set('student_parent_phone', $data['student_parent_phone']);
         }
 
-        if (isset($data['student_hobby'])) {
-            $this->db->set('student_hobby', $data['student_hobby']);
-        }
+        // if (isset($data['student_hobby'])) {
+        //     $this->db->set('student_hobby', $data['student_hobby']);
+        // }
 
         if (isset($data['student_address'])) {
             $this->db->set('student_address', $data['student_address']);

@@ -11,7 +11,7 @@ if (isset($student)) {
 	$inputDateValue = $student['student_born_date'];
 	$inputPhoneValue = $student['student_phone'];
 	$inputParPhoneValue = $student['student_parent_phone'];
-	$inputHobbyValue = $student['student_hobby'];
+	// $inputHobbyValue = $student['student_hobby'];
 	$inputAddressValue = $student['student_address'];
 	$inputGenderValue = $student['student_gender'];
 	$inputMotherValue = $student['student_name_of_mother'];
@@ -27,7 +27,7 @@ if (isset($student)) {
 	$inputDateValue = set_value('student_born_date');
 	$inputPhoneValue = set_value('student_phone');
 	$inputParPhoneValue = set_value('student_parent_phone');
-	$inputHobbyValue = set_value('student_hobby');
+	// $inputHobbyValue = set_value('student_hobby');
 	$inputAddressValue = set_value('student_address');
 	$inputGenderValue = set_value('student_gender');
 	$inputMotherValue = set_value('student_name_of_mother');
@@ -102,11 +102,6 @@ if (isset($student)) {
 									</div>
 
 									<div class="form-group">
-										<label>Hobi</label>
-										<input name="student_hobby" type="text" class="form-control" value="<?php echo $inputHobbyValue ?>" placeholder="Hobi">
-									</div>
-
-									<div class="form-group">
 										<label>No. Handphone <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
 										<input name="student_phone" type="text" class="form-control" value="<?php echo $inputPhoneValue ?>" placeholder="No Handphone">
 									</div>
@@ -118,31 +113,18 @@ if (isset($student)) {
 
 								<div class="tab-pane" id="tab_2">
 									<div class="form-group">
-										<label>Nomor Induk Madrasah (NIM) <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
-										<input name="student_nis" type="text" class="form-control" value="<?php echo $inputNisValue ?>" placeholder="NIM">
+										<label>NIS <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
+										<input name="student_nis" type="text" class="form-control" value="<?php echo $inputNisValue ?>" placeholder="NIS">
 									</div>
-
-									<?php if (!isset($student)) { ?>
-										<div class="form-group">
-											<label>Password <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
-											<input name="student_password" type="password" class="form-control" placeholder="Password">
-										</div>
-
-										<div class="form-group">
-											<label>Konfirmasi Password <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
-											<input name="passconf" type="password" class="form-control" placeholder="Konfirmasi Password">
-										</div>
-									<?php } ?>
-
 									<div class="form-group">
-										<label>NISN <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
+										<label>NISN</label>
 										<input name="student_nisn" type="text" class="form-control" value="<?php echo $inputNisNValue ?>" placeholder="NISN">
 									</div>
 									<?php if ($setting_level['setting_value'] == 'senior') { ?>
 										<div class="form-group">
-											<label>Jurusan <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
+											<label>Jenjang <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
 											<select name="majors_majors_id" class="form-control">
-												<option value="">-- Pilih Jurusan --</option>
+												<option value="">-- Pilih Jenjang --</option>
 												<?php foreach ($majors as $row) : ?>
 													<option value="<?php echo $row['majors_id'] ?>" <?php echo ($inputMajorValue == $row['majors_id']) ? 'selected' : '' ?>><?php echo $row['majors_name'] ?></option>
 												<?php endforeach ?>
@@ -151,7 +133,7 @@ if (isset($student)) {
 									<?php } ?>
 									<div ng-controller="classCtrl">
 										<div class="form-group">
-											<label>Kelas *</label>
+											<label>Kelas <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
 											<select name="class_class_id" class="form-control autocomplete">
 												<option value="">-- Pilih Kelas --</option>
 												<option ng-repeat="class in classs" ng-selected="class_data.index == class.class_id" value="{{class.class_id}}">{{class.class_name}}</option>

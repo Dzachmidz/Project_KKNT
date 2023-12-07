@@ -2,7 +2,7 @@
 
 <head>
   <meta http-equiv="Content-Style-Type" content="text/css" />
-  <title>Kartu_Pembayaran_Siswa</title>
+  <title>Kartu Pembayaran Siswa</title>
 
   <style type="text/css">
     body {
@@ -93,7 +93,7 @@
 
         <table class="name">
           <tr>
-            <td>NIM</td>
+            <td>NIS</td>
             <td>:</td>
             <td><?php echo $row['student_nis'] ?></td>
           </tr>
@@ -114,7 +114,7 @@
           </tr>
           <?php if (majors() == 'senior') { ?>
             <tr>
-              <td>Jurusan</td>
+              <td>Jenjang</td>
               <td>:</td>
               <td><?php echo $row['majors_name'] ?></td>
             </tr>

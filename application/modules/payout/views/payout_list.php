@@ -24,17 +24,18 @@
 					<div class="box-body">
 						<?php echo form_open(current_url(), array('class' => 'form-horizontal', 'method' => 'get')) ?>
 						<div class="col-md-6">
-							<label for="" class="control-label">Pilih Tahun Pelajaran</label><br><br>
+							<label for="" class="control-label">Pilih Tahun Ajaran</label><br><br>
 							<select class="form-control" name="n">
+								<option value="">-- Pilih Tahun Ajaran --</option>
 								<?php foreach ($period as $row) : ?>
 									<option <?php echo (isset($f['n']) and $f['n'] == $row['period_id']) ? 'selected' : '' ?> value="<?php echo $row['period_id'] ?>"><?php echo $row['period_start'] . '/' . $row['period_end'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
 						<div class="col-md-6">
-							<label for="" class="control-label">Input Berdasarkan NIM Siswa</label><br><br>
+							<label for="" class="control-label">Input Berdasarkan NIS Siswa</label><br><br>
 							<div class="input-group">
-								<input type="text" class="form-control" autofocus name="r" <?php echo (isset($f['r'])) ? 'placeholder="' . $f['r'] . '"' : 'placeholder="Masukkan NIM Siswa"' ?> required>
+								<input type="text" class="form-control" autofocus name="r" <?php echo (isset($f['r'])) ? 'placeholder="' . $f['r'] . '"' : 'placeholder="-- Masukkan NIS Siswa --"' ?> required>
 								<span class="input-group-btn">
 									<button class="btn btn-success" type="submit"><i class="fa fa-search"></i> Cari Data</button>
 								</span>

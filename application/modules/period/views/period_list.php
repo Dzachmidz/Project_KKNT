@@ -20,7 +20,7 @@
 						<div class="box-tools">
 							<?php echo form_open(current_url(), array('class' => 'form-horizontal', 'method' => 'get')) ?>
 							<div class="input-group input-group-sm" style="width: 250px;">
-								<input type="text" id="field" autofocus name="n" <?php echo (isset($f['n'])) ? 'placeholder="' . $f['n'] . '"' : 'placeholder="Tahun Pelajaran"' ?> class="form-control" required>
+								<input type="text" id="field" autofocus name="n" <?php echo (isset($f['n'])) ? 'placeholder="' . $f['n'] . '"' : 'placeholder="Cari Tahun Ajaran"' ?> class="form-control" required>
 								<div class="input-group-btn">
 									<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 								</div>
@@ -33,7 +33,7 @@
 						<table class="table table-hover table-striped table-bordered">
 							<tr>
 								<th>No</th>
-								<th>Tahun Pelajaran</th>
+								<th>Tahun Ajaran</th>
 								<th>Status</th>
 								<th>Aksi</th>
 							</tr>

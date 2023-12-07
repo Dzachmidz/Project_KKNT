@@ -110,7 +110,7 @@
 	<table style="padding-top: -5px; padding-bottom: 5px">
 		<tbody>
 			<tr>
-				<td style="width: 100px;">NIM</td>
+				<td style="width: 100px;">NIS</td>
 				<td style="width: 5px;">:</td>
 				<td style="width: 150px;"><?php echo $printpay['student_nis'] ?></td>
 				<td style="width: 130px;">Tanggal Bayar</td>

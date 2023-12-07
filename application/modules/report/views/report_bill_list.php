@@ -19,7 +19,7 @@
 						<div class="row">
 							<div class="col-md-3">
 								<div class="form-group">
-									<label>Tahun Pelajaran</label>
+									<label>Tahun Ajaran</label>
 									<select class="form-control" name="p">
 										<!-- <option value="">-- Tahun Ajaran --</option> -->
 										<?php foreach ($period as $row) : ?>
@@ -42,7 +42,7 @@
 							<?php if (majors() == 'senior') { ?>
 								<div class="col-md-3">
 									<div class="form-group">
-										<label>Jurusan</label>
+										<label>Jenjang</label>
 										<select class="form-control" name="k">
 											<?php foreach ($majors as $row) : ?>
 												<option <?php echo (isset($q['k']) and $q['k'] == $row['majors_id']) ? 'selected' : '' ?> value="<?php echo $row['majors_id'] ?>"><?php echo $row['majors_name'] ?></option>

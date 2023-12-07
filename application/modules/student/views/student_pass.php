@@ -42,7 +42,7 @@
 								<tr>
 									<th><input type="checkbox" id="selectall" value="checkbox" name="checkbox"></th>
 									<th>No</th>
-									<th>NIM</th>
+									<th>NIS</th>
 									<th>Nama</th>
 									<th>Status Kelulusan</th>
 								</tr>
@@ -85,9 +85,9 @@
 			<div class="col-md-2">
 				<div class="box box-primary">
 					<div class="box-body">
-						<button class="btn btn-success btn-block" type="submit" onclick="$('#lulus').submit()"><span class="glyphicon glyphicon glyphicon-chevron-right"></span> <b>Proses Lulus</b></button>
+						<button class="btn btn-success btn-block" type="submit" onclick="$('#lulus').submit()"><span class="glyphicon glyphicon glyphicon-chevron-right"></span> <b>Proses Kelulusan</b></button>
 						<br>
-						<button class="btn btn-danger btn-block" onclick="$('#kembali').submit();"><span class="glyphicon glyphicon glyphicon-chevron-left"></span> <b>Batal Lulus</b></button>
+						<button class="btn btn-danger btn-block" onclick="$('#kembali').submit();"><span class="glyphicon glyphicon glyphicon-chevron-left"></span> <b>Batal Kelulusan</b></button>
 					</div>
 				</div>
 			</div>
@@ -101,7 +101,7 @@
 								<tr>
 									<th><input type="checkbox" id="selectall2" value="checkbox" name="checkbox"></th>
 									<th>No</th>
-									<th>NIM</th>
+									<th>NIS</th>
 									<th>Nama</th>
 									<th>Status Kelulusan</th>
 								</tr>
